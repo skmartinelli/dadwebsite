@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Official website of author Matthew A. Martinelli, author of Past, Future, Tense."
+  />
+
+  <title>Matthew A. Martinelli | Author</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a href="#" class="logo">MAM</a>
+
+    <nav>
+      <a href="#books">Books</a>
+      <a href="#about">About</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Author of suspense & speculative fiction</p>
+
+        <h1>
+          Matthew A.
+          <span>Martinelli</span>
+        </h1>
+
+        <p class="hero-copy">
+          Stories of suspense, the supernatural, and futures both
+          distant and disturbingly close.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="button button-primary"
+            href="https://www.amazon.com/Past-Future-Tense-Matthew-Martinelli-ebook/dp/B085187ZXV"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore the Book
+          </a>
+
+          <a class="text-link" href="#about">
+            About the Author →
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-decoration" aria-hidden="true">
+        <span>PAST</span>
+        <span>FUTURE</span>
+        <span>TENSE</span>
+      </div>
+    </section>
+
+
+    <section class="book-section" id="books">
+      <div class="section-label">
+        <span>01</span>
+        <p>Featured Work</p>
+      </div>
+
+      <div class="book-grid">
+        <div class="book-art">
+          <div class="book-cover-placeholder">
+            <p>PAST</p>
+            <p>FUTURE</p>
+            <p>TENSE</p>
+            <small>Matthew A. Martinelli</small>
+          </div>
+        </div>
+
+        <div class="book-info">
+          <p class="eyebrow">Fourteen short stories</p>
+
+          <h2>
+            Past, Future,
+            <em>Tense</em>
+          </h2>
+
+          <p class="book-description">
+            A collection of fourteen tales crossing horror, thriller,
+            supernatural fiction, and science fiction. Across settings
+            stretching from 1978 to 2644, each story moves toward its
+            own fateful twist.
+          </p>
+
+          <blockquote>
+            “The future is uncertain. The past is never as distant
+            as it seems.”
+          </blockquote>
+
+          <a
+            class="button button-primary"
+            href="https://www.amazon.com/Past-Future-Tense-Matthew-Martinelli-ebook/dp/B085187ZXV"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Buy on Amazon
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="about-section" id="about">
+      <div class="section-label">
+        <span>02</span>
+        <p>The Author</p>
+      </div>
+
+      <div class="about-grid">
+        <h2>
+          Teacher by day.<br />
+          <em>Storyteller always.</em>
+        </h2>
+
+        <div class="about-copy">
+          <p>
+            Matthew A. Martinelli is an author and educator based in
+            Southern California. A high-school Economics teacher, he
+            has been writing fiction since the early 2000s.
+          </p>
+
+          <p>
+            His work moves through suspense, horror, supernatural
+            fiction, adventure, and science fiction—often exploring
+            the moments when ordinary lives collide with something
+            unexpected.
+          </p>
+
+          <p>
+            His short-story collection <strong>Past, Future, Tense</strong>
+            was first published in 2014, with a second edition released
+            in 2020.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="connect-section" id="connect">
+      <p class="eyebrow">Follow the story</p>
+
+      <h2>Connect with Matthew</h2>
+
+      <div class="social-links">
+        <a
+          href="https://www.instagram.com/matthewamartinelli/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+          <span>↗</span>
+        </a>
+
+        <a
+          href="https://www.amazon.com/stores/author/B00MK3LOW8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Amazon Author Page
+          <span>↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>© <span id="year"></span> Matthew A. Martinelli</p>
+    <p>Author of Past, Future, Tense</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
