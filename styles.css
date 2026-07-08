@@ -1,0 +1,420 @@
+:root {
+  --background: #0d0d0d;
+  --surface: #151515;
+  --surface-light: #1c1c1c;
+  --text: #eee9df;
+  --muted: #aaa49a;
+  --accent: #a94732;
+  --accent-hover: #c15a42;
+  --border: #2b2b2b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+main {
+  overflow: hidden;
+}
+
+.hero {
+  min-height: 78vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 32px;
+
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.eyebrow {
+  margin: 0 0 20px;
+  color: var(--accent);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(4rem, 9vw, 8rem);
+  font-weight: 500;
+  line-height: 0.82;
+  letter-spacing: -0.04em;
+}
+
+.hero h1 span {
+  display: block;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.hero-copy {
+  max-width: 600px;
+  margin: 36px 0 0;
+
+  color: var(--muted);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.hero-actions {
+  margin-top: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 22px;
+
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+.button-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.button-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.text-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.text-link:hover {
+  color: var(--text);
+}
+
+.hero-decoration {
+  color: #1c1c1c;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 700;
+  line-height: 0.8;
+
+  transform: rotate(-4deg);
+  user-select: none;
+}
+
+.hero-decoration span {
+  display: block;
+}
+
+.book-section,
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 32px;
+}
+
+.book-section {
+  border-top: 1px solid var(--border);
+}
+
+.section-label {
+  margin-bottom: 60px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.section-label span {
+  color: var(--accent);
+}
+
+.section-label p {
+  margin: 0;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.book-art {
+  display: flex;
+  justify-content: center;
+}
+
+.book-cover-placeholder {
+  width: min(100%, 330px);
+  aspect-ratio: 5 / 8;
+  padding: 40px 30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #2a1916,
+      #111 55%,
+      #1d1d1d
+    );
+
+  border: 1px solid #3a302d;
+  box-shadow: 20px 30px 60px rgba(0, 0, 0, 0.45);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-cover-placeholder p {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 0.82;
+}
+
+.book-cover-placeholder p:nth-child(2) {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.book-cover-placeholder small {
+  margin-top: auto;
+
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.book-info h2,
+.about-grid h2,
+.connect-section h2 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+.book-info h2 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.95;
+}
+
+.book-info h2 em {
+  color: var(--accent);
+}
+
+.book-description {
+  max-width: 620px;
+  margin: 30px 0;
+
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+blockquote {
+  margin: 35px 0;
+  padding-left: 24px;
+
+  border-left: 2px solid var(--accent);
+
+  color: #c7c0b5;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.about-section {
+  border-top: 1px solid var(--border);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+}
+
+.about-grid h2 {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  line-height: 1;
+}
+
+.about-grid h2 em {
+  color: var(--accent);
+}
+
+.about-copy {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.about-copy p:first-child {
+  margin-top: 0;
+}
+
+.connect-section {
+  padding: 120px 32px;
+  text-align: center;
+
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.connect-section h2 {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+.social-links {
+  max-width: 650px;
+  margin: 50px auto 0;
+
+  border-top: 1px solid var(--border);
+}
+
+.social-links a {
+  padding: 20px 4px;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--border);
+
+  color: var(--muted);
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.social-links a:hover {
+  padding-left: 10px;
+  color: var(--text);
+}
+
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #6f6a63;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .site-header {
+    padding: 22px 20px;
+  }
+
+  nav {
+    gap: 16px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 90px 20px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .hero-decoration {
+    display: none;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .book-section,
+  .about-section {
+    padding: 90px 20px;
+  }
+
+  .book-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .book-art {
+    justify-content: flex-start;
+  }
+
+  footer {
+    padding: 28px 20px;
+    flex-direction: column;
+  }
+}
